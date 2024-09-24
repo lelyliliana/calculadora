@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <!-- Enlazamos el archivo CSS para darle estilo a la calculadora -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Contenedor principal de la calculadora -->
+    <div class="calculadora">
+        <!-- Campo de texto donde se mostrarán los números y resultados -->
+        <input type="text" id="display" disabled>
+        <!-- Contenedor de los botones de la calculadora -->
+        <div class="botones">
+            <!-- Cada botón llama a una función en JavaScript -->
+            <button onclick="limpiar()">C</button>
+            <button onclick="borrar()">⌫</button>
+            <button onclick="operar('/')">÷</button>
+            <button onclick="operar('*')">×</button>
+            <button onclick="agregarNumero('7')">7</button>
+            <button onclick="agregarNumero('8')">8</button>
+            <button onclick="agregarNumero('9')">9</button>
+            <button onclick="operar('-')">-</button>
+            <button onclick="agregarNumero('4')">4</button>
+            <button onclick="agregarNumero('5')">5</button>
+            <button onclick="agregarNumero('6')">6</button>
+            <button onclick="operar('+')">+</button>
+            <button onclick="agregarNumero('1')">1</button>
+            <button onclick="agregarNumero('2')">2</button>
+            <button onclick="agregarNumero('3')">3</button>
+            <button onclick="igual()">=</button>
+            <button onclick="agregarNumero('0')" class="cero">0</button>
+            <button onclick="agregarNumero('.')">.</button>
+        </div>
+    </div>
+    <!-- Enlazamos el archivo JavaScript que contiene la lógica de la calculadora -->
+    <script src="script.js"></script>
+</body>
+</html>
+
